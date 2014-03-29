@@ -91,7 +91,6 @@ function majorsGraph(majorsAu,majorsWin){
 	var dataAu = [];
 	var labels = [];
 	for(var m in majors){
-		console.log(m);
 		labels.push(m);
 		dataAu.push(majorsAu[m]);
 		dataWin.push(majorsWin[m]);
@@ -229,12 +228,8 @@ function colorGraph(colors){
 }
 
 function scrollChange(e){
-	if(window.scrollY=1275){
-		colorGraph(getColors());
-	}else if(window.scrollY=500){
-		sureGraph();
-	}
-
+	console.log(window.scrollY);
+	//do something
 }
 
 
