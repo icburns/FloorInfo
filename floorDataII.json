@@ -1,0 +1,291 @@
+{
+  "people": [
+    {
+        "id":0,
+        "major":["Informatics"],
+        "sure":5,
+        "classes":["INFO 498","MATH 309","INFO 490","INFO 310"],
+        "color":"blue"
+    },
+    {
+        "id":1,
+        "major":["BioE"],
+        "sure":4,
+        "classes":["MATH 135","ECON 200","ENGL 111"],
+        "color":"blue"
+    },
+    {
+        "id":2,
+        "major":["Anthropology","Philosophy"],
+        "sure":4,
+        "classes":["MATH 124","HIST 112","ESS 102"],
+        "color":"purple"        
+    },
+    {
+        "id":3,
+        "major":["BioE"],
+        "sure":5,
+        "classes":["MATH 125","CHEM 152","Seminar"],
+        "color":"navy blue"    
+    },
+    {
+        "id":4,
+        "major":["Business HR"],
+        "sure":5,
+        "classes":["STAT 220","URBDP 200","ASTRO 150"],
+        "color":"turquoise"
+    },
+    {
+        "id":5,
+        "major":["Public Health"],
+        "sure":3,
+        "classes":["BIO 119","SOCWF 200","BSTR 301","ENGL 200"],
+        "color":"pink"
+    },
+    {
+        "id":6,
+        "major":["Nursing"],
+        "sure":5,
+        "classes":["BSTR 301","ESCF 200","ENGL 354"],
+        "color":"purple"
+    },
+    {
+        "id":7,
+        "major":["Business MKT","LSJ"],
+        "sure":3,
+        "classes":["STAT 220","ASTR 150","URBDP 200"],
+        "color":"pink"
+    },
+    {
+        "id":8,
+        "major":["Bio"],
+        "sure":5,
+        "classes":["BSTR 301","SPAN 323","PHYS 115","PHYS 118"],
+        "color":"yellow"
+    },
+    {
+        "id":9,
+        "major":["CSE","EE"],
+        "sure":5,
+        "classes":["MATH 126","CSE 142","PSYCH 101"],
+        "color":"blue"
+    },
+    {
+        "id":10,
+        "major":["Physiology"],
+        "sure":5,
+        "classes":["ARCHY 205","ECON 200","ENGL 111"],
+        "color":"dark red"
+    },
+    {
+        "id":11,
+        "major":["BioChem"],
+        "sure":4,
+        "classes":["CHEM 152","MATH 126","ENGL 111"],
+        "color":"blue"
+    },
+    {
+        "id":12,
+        "major":["ECFS"],
+        "sure":5,
+        "classes":["ENGL 198","PSYCH 101","BIO 108"],
+        "color":"red"
+    },
+    {
+        "id":13,
+        "major":["Business HR"],
+        "sure":4,
+        "classes":["ECON 201","PHIL 100","ART 203","ATM 103"],
+        "color":"light"
+    },    
+    {
+        "id":14,
+        "major":["EE"],
+        "sure":4,
+        "classes":["MATH 124","SOCIO 000"],
+        "color":"red"
+    },
+    {
+        "id":15,
+        "major":["Astronomy"],
+        "sure":4,
+        "classes":["ASTR 190","RUSS 102","MATH 124","SCAND 315"],
+        "color":"blue"
+    },    
+    {
+        "id":16,
+        "major":["Poli Sci"],
+        "sure":2,
+        "classes":["POLS 203","BIO 203","RUSS 120"],
+        "color":"forest green"
+    },    
+    {
+        "id":17,
+        "major":["EE"],
+        "sure":4,
+        "classes":["","","",""],
+        "color":"black"
+    },    
+    {
+        "id":18,
+        "major":["BioE"],
+        "sure":5,
+        "classes":["CHEM 162","MATH 125","ENGL 131"],
+        "color":""
+    },    
+    {
+        "id":19,
+        "major":["Business ADMIN"],
+        "sure":4,
+        "classes":["MATH 126","ECON 201","ENGL 131"],
+        "color":"pink"
+    },
+    {
+        "id":20,
+        "major":["Psychology"],
+        "sure":2,
+        "classes":["MATH 125","ECON 200","PSYCH 202"],
+        "color":"purple"
+    },
+    {
+        "id":21,
+        "major":["Economics"],
+        "sure":3,
+        "classes":["ECON 200","ENGL 111"],
+        "color":"white"
+    },
+    {
+        "id":22,
+        "major":["Psychology"],
+        "sure":5,
+        "classes":["ENGL 131","ECON 200","CLAS 430","PSYCH 305"],
+        "color":"black"
+    },
+    {
+        "id":23,
+        "major":["Communications","Informatics"],
+        "sure":3,
+        "classes":["POLS 000","COMM 000"],
+        "color":"purple"
+    },
+    {
+        "id":24,
+        "major":["International Studies"],
+        "sure":4,
+        "classes":["","",""],
+        "color":""        
+    },
+    {
+        "id":25,
+        "major":["Sociology"],
+        "sure":4,
+        "classes":["SPAN 000","",""],
+        "color":""        
+    },    
+    {    
+        "id":26,
+        "major":["Economics"],
+        "sure":4,
+        "classes":["ECON 201","",""],
+        "color":""        
+    },    
+    {    
+        "id":27,
+        "major":["HCDE"],
+        "sure":3,
+        "classes":["PHYS 122","CSE 000",""],
+        "color":""        
+    },    
+    {    
+        "id":28,
+        "major":["HCDE"],
+        "sure":5,
+        "classes":["","",""],
+        "color":""        
+    },
+    {    
+        "id":29,
+        "major":["Biology"],
+        "sure":1,
+        "classes":["BIO 200","",""],
+        "color":""        
+    },
+    {    
+        "id":30,
+        "major":["MechE"],
+        "sure":4,
+        "classes":["","",""],
+        "color":""        
+    },
+    {    
+        "id":30,
+        "major":["MechE"],
+        "sure":4,
+        "classes":["PHYS 121","",""],
+        "color":""        
+    },
+    {    
+        "id":31,
+        "major":["Mathematics"],
+        "sure":5,
+        "classes":["ENGL 000",""],
+        "color":""        
+    },
+    {    
+        "id":32,
+        "major":["Business FIN"],
+        "sure":5,
+        "classes":["ECON 201","MNGMT 200",""],
+        "color":""        
+    },
+    {    
+        "id":33,
+        "major":["Mathematics"],
+        "sure":4,
+        "classes":["MATH 125","",""],
+        "color":"red"        
+    },
+    {    
+        "id":34,
+        "major":["Philosophy","Design"],
+        "sure":4,
+        "classes":["ITAL 000","PHIL 000",""],
+        "color":""        
+    },
+    {    
+        "id":35,
+        "major":["Economics"],
+        "sure":4,
+        "classes":["PHYS 114","MATH 124","PHIL 000"],
+        "color":""        
+    },
+    {    
+        "id":36,
+        "major":["BioChem"],
+        "sure":3,
+        "classes":["CHEM 152","MATH 124",""],
+        "color":""        
+    },
+    {    
+        "id":37,
+        "major":["Bio"],
+        "sure":4,
+        "classes":["ESS 100","",""],
+        "color":""        
+    },
+    {    
+        "id":38,
+        "major":["CSE"],
+        "sure":4,
+        "classes":["ESS 100","CSE 142","CHEM 152"],
+        "color":""        
+    },
+        {    
+        "id":2,
+        "major":["CSE","Mathematics"],
+        "sure":4,
+        "classes":["","",""],
+        "color":""        
+    }
+  ]
+}
