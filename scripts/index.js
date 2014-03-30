@@ -1,3 +1,4 @@
+"use strict";
 (function()
 {
 	var winter = [];
@@ -7,6 +8,10 @@
 	window.onload = function()
 	{
 	window.addEventListener("scroll",scrollChange);
+	var graphs = document.getElementsByClassName("graphArea");
+	for(var i=graphs.length-1; i>=0; i--){
+		graphs[i].style.paddingTop=document.getElementsByTagName("header")[0].offsetHeight+"px";
+	}
 	setCanvasSizes();
 	getJsonAut();
 
@@ -14,10 +19,14 @@
 	 
 function setCanvasSizes(){
 	var canvases = document.getElementsByTagName("canvas");
+	var xy = Math.min(window.innerHeight,window.innerWidth);
 	for(var i=canvases.length-1; i>=0; i--){
-		canvases[i].height = window.innerHeight-50;
+		canvases[i].height = xy-document.getElementsByTagName("header")[0].offsetHeight-50;
 		canvases[i].width = canvases[i].height;
 	}
+	//radar needs more room
+	canvases[0].height +=100;
+	canvases[0].width = canvases[0].height;
 
 }
 
@@ -73,7 +82,7 @@ function setMajors(){
 
 
 function getMajors(qtr){
-	qtrMajors = Object.create(majors);
+	var qtrMajors = Object.create(majors);
 	for(var i=0; i<qtr.length; i++){
 		var currentMajor = qtr[i]["major"];
 		if (currentMajor!=""){
@@ -100,17 +109,17 @@ var data = {
 	labels : labels,
 	datasets : [
 		{
-			fillColor: "rgba(220,100,100,.5)",
-			strokeColor: "rgba(220,100,100,.8)",
-			pointColor : "rgba(220,100,100,1)",
-			pointStrokeColor : "rgba(220,100,100,.8)",
+			fillColor: "rgba(200,100,50,.5)",
+			strokeColor: "rgba(200,100,50,.8)",
+			pointColor : "rgba(200,100,50,1)",
+			pointStrokeColor : "rgba(200,100,50,.8)",
 			data : dataAu
 		},
 		{
-			fillColor: "rgba(100,100,220,.5)",
-			strokeColor: "rgba(100,100,220,.8)",
-			pointColor : "rgba(100,100,220,1)",
-			pointStrokeColor : "rgba(100,100,220,.8)",
+			fillColor: "rgba(50,100,200,.5)",
+			strokeColor: "rgba(50,100,200,.8)",
+			pointColor : "rgba(50,100,200,1)",
+			pointStrokeColor : "rgba(50,100,200,.8)",
 			data : dataWin
 		}
 	]
@@ -120,7 +129,12 @@ var data = {
 		scaleSteps : 5,
 		scaleStepWidth : 1,
 		scaleStartValue : 0,
-		scaleShowLabels : true
+		scaleShowLabels : true,
+		scaleShowLabelBackdrop : false,
+		animation: (typeof window.orientation == 'undefined'), //false for most mobile
+		scaleLineColor : "rgba(200,200,200,.1)",
+		angleLineColor : "rgba(200,200,200,.1)",	
+		scaleFontColor : "rgba(200,200,200,.8"
 	};
 
 
@@ -146,12 +160,12 @@ function sureGraph(){
 		labels : labels,
 		datasets : [
 			{
-				fillColor : "rgba(220,100,100,0.75)",
+				fillColor : "rgba(200,100,50,.75)",
 				strokeColor : "rgba(100,100,100,1)",
 				data : sureAu
 			},
 			{
-				fillColor : "rgba(100,100,220,0.75)",
+				fillColor : "rgba(50,100,200,.75)",
 				strokeColor : "rgba(100,100,100,1)",
 				data : sureWin
 			}
@@ -164,6 +178,10 @@ function sureGraph(){
 		scaleStepWidth : 1,
 		scaleStartValue : 0,
 		scaleShowLabels : false,
+		scaleFontColor : "rgba(200,200,200,.8",
+		scaleLineColor : "rgba(200,200,200,.1)",
+		animation: (typeof window.orientation == 'undefined'), //false for most mobile
+		scaleGridLineColor : "rgba(200,200,200,.05)"
 	};
 
 
@@ -218,7 +236,11 @@ function colorGraph(colors){
 		scaleSteps : 8,
 		scaleStepWidth : 1,
 		scaleStartValue : 0,
-		scaleShowLabels : false
+		scaleShowLabels : false,
+		scaleFontColor : "rgba(200,200,200,.8",
+		scaleLineColor : "rgba(200,200,200,.1)",
+		animation: (typeof window.orientation == 'undefined'), //false for most mobile		
+		scaleGridLineColor : "rgba(200,200,200,.05)"
 	};
 
 
@@ -228,7 +250,6 @@ function colorGraph(colors){
 }
 
 function scrollChange(e){
-	console.log(window.scrollY);
 	//do something
 }
 

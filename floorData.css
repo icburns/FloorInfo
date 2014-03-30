@@ -2,14 +2,53 @@
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	width: 100%;
+	color: white;
+}
+
+body{
+	background-color:rgba(25,25,25,1);
+	font-family:"Century Gothic",sans-serif;	
+}
+
+header{
+	position:fixed;
+	padding-left:2.5%;
+	padding-rignt:2.5%;
+	left:0px;
+	top:0px;
+	background-color:rgba(50,50,50,.8);
+}
+
+.aut{
+	color:rgba(200,100,50,1);
+}
+
+.win{
+	color:rgba(50,100,200,1);
+}
+
+nav a{
+	width:28%;
+	text-align:center;
+	float:left;
+	margin-left:2.5%;
+	margin-right:2.5%;
+	border:1px solid white;
+	border-radius:4px;
+	text-decoration:none;
+}
+
+nav a:hover{
+	background-color:rgba(100,100,100,.8);
 }
 
 .graphArea{
 	width: 100%;
 	padding:5%;
-	margin:auto;
+	margin-left:auto;
+	margin-right:auto;
 	text-align:center;
-	box-shadow:0px 4px #333, 0px -3px #888;	
+	box-shadow:0px 4px #333, 0px -3px #555;	
 }
 canvas{
 	display:block;
